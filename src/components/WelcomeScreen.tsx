@@ -32,7 +32,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   onViewTrophies,
   leveling,
 }) => {
-  const { theme } = useTheme();
+  const theme = 'dark';
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
@@ -359,7 +359,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
 
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 
